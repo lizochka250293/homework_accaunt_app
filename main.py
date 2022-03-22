@@ -20,12 +20,12 @@ def cheack_activ(cur):
             if (dt_month_now - month_start >= 1) and (abs(dt_day_now - day_start))>=1:
 
 
-                choose = str(input("Продлить подписку? "))
+                choose = str(input("Срок вашей подписки истек. Продлить подписку? "))
                 if choose.lower() == 'yes':
-                    return f'Пользователь, {cur}, приятного просмотра'
+                    print(f'Пользователь, {cur}, приятного просмотра')
 
                 elif choose.lower() == 'no':
-                    return f'Данное видио доступно только подписчикам. Продлить подписку?'
+                    print(f'Данное видио доступно только подписчикам.')
             else:
                 print(f'Пользователь, {cur}, приятного просмотра')
     else:
