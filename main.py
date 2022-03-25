@@ -1,6 +1,6 @@
 import sqlite3
 import datetime
-def cheack_activ(cur):
+def check_activ(cur):
     dt_month_now = datetime.datetime.now().date().month
     dt_day_now = datetime.datetime.now().date().day
     data = []
@@ -41,5 +41,5 @@ def cheack_activ(cur):
 
 
 
-cheack_activ(cur = 'xsacdv@yandex.ru')
+check_activ(cur = 'xsacdv@yandex.ru')
 
